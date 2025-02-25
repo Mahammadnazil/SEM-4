@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form method="POST" action="controller.php">  <!-- Submitting data to controller.php -->
+        Name: <input type="text" name="name" required><br><br>
+        Email: <input type="email" name="email" required><br><br>
+        Course: <input type="text" name="course" required><br><br>
+        Age: <input type="number" name="age" required><br><br>
+        
+        <input type="submit" name="submit_post" value="Submit with POST">
+        <input type="submit" name="submit_get" value="Submit with GET" formaction="controller.php?method=GET">
+    </form>
+</body>
+</html>
